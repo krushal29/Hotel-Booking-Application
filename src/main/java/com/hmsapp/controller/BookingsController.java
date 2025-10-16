@@ -47,7 +47,7 @@ public class BookingsController {
                 roomType,
               propertyId
         );
-    Property property=  propertyRepository.findById(propertyId).get();
+    Property property= propertyRepository.findById(propertyId).get();
 
         for(RoomAvailability roomAvailability:rooms){
           if(roomAvailability.getTotal_rooms()==0){
